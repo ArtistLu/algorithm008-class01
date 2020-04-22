@@ -2,6 +2,8 @@
 - [day2-1](https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/)
 - [day2-2](https://leetcode-cn.com/problems/get-kth-magic-number-lcci/)
 - [day2-3](https://leetcode-cn.com/problems/get-kth-magic-number-lcci/)
+- [day3-1](https://leetcode-cn.com/problems/remove-outermost-parentheses/)
+- [day3-2](https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/)
   
 ```
   func getKthMagicNumber(k int) int {
