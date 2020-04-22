@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	testMatrix := [][]string{
@@ -24,16 +26,14 @@ func isAnagram(s string, t string) bool {
 		return false
 	}
 
-	sb := []byte(s)
-	tb := []byte(t)
-	bc := make([]int, 26)
-	for i, c := range sb {
-		bc[c-'a']++
-		bc[tb[i]-'a']--
+	char := [26]int{}
+	for _, c := range s {
+		char[c-'a']++
 	}
 
-	for _, c := range bc {
-		if c != 0 {
+	for _, c := range t {
+		char[c-'a']--
+		if char[c-'a'] < 0 {
 			return false
 		}
 	}
