@@ -44,3 +44,5 @@ func minNum(i, j int) int {
 - [day6-1](https://leetcode-cn.com/problems/zero-matrix-lcci/)
 - [day6-2](https://leetcode-cn.com/problems/minimum-absolute-difference/)
 - [day6-3](https://leetcode-cn.com/problems/diameter-of-binary-tree/)
+- [day7-1](https://leetcode-cn.com/problems/sort-colors/)
+- [day7-2](https://leetcode-cn.com/problems/merge-k-sorted-lists/)
