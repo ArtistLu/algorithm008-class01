@@ -52,7 +52,6 @@ func threeSum(nums []int) [][]int {
 				l++
 			}
 		}
-
 	}
 
 	return re
