@@ -35,7 +35,7 @@ func buildTree(preorder []int, inorder []int) *TreeNode {
 }
 
 func helper(preorder, inorder []int, start, end int) *TreeNode {
-	if start < end {
+	if start > end {
 		return nil
 	}
 

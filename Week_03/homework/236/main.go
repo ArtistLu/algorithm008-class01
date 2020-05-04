@@ -72,3 +72,16 @@ func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
 		return re.Right
 	}
 }
+
+func recursion(level param int) {
+	if level > max_level {
+		//process 
+		return
+	}
+
+	//process current
+
+	recursion(level + 1, newParam)
+
+	//
+}

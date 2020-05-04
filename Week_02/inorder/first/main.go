@@ -1,8 +1,9 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
+
+// 94. 二叉树的中序遍历
+// https://leetcode-cn.com/problems/binary-tree-inorder-traversal/
 
 func main() {
 	a := &TreeNode{10, nil, nil}
@@ -22,28 +23,12 @@ func main() {
 	b.Right = e
 	c.Left = f
 	c.Right = g
+
 	printTree(a)
-	fmt.Println(preOrderNR(a))
-	fmt.Println(preOrder(a))
-	fmt.Println(inOrder(a))
-	// f.Left = h
-	// f.Right = i
-	// i.Right = j
-	// obj := Constructor()
-	// s := obj.serialize(a)
-	// root := obj.deserialize(s)
-	// printTree(root)
-	// fmt.Println(s)
+
+	fmt.Println(inorderTraversal(a))
 }
 
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
 type TreeNode struct {
 	Val   int
 	Left  *TreeNode
@@ -104,71 +89,40 @@ func printTree(root *TreeNode) {
 	}
 }
 
-/**
- * Your Codec object will be instantiated and called as such:
- * obj := Constructor();
- * data := obj.serialize(root);
- * ans := obj.deserialize(data);
- */
+const (
+	print = "print"
+	visit = "visit"
+)
 
-func preOrderNR(root *TreeNode) []int {
-	re := []int{}
-	stack := []*TreeNode{}
+func inorderTraversal(root *TreeNode) []int {
 	if root == nil {
-		return re
+		return nil
 	}
 
-	stack = append(stack, root)
+	re := []int{}
+	type node struct {
+		opt      string
+		treeNode *TreeNode
+	}
+
+	stack := []*node{&node{visit, root}}
+
 	for len(stack) > 0 {
 		s := stack[len(stack)-1]
 		stack = stack[0 : len(stack)-1]
-
-		re = append(re, s.Val)
-
-		if s.Right != nil {
-			stack = append(stack, s.Right)
+		if s.opt == print {
+			re = append(re, s.treeNode.Val)
+			continue
 		}
-		if s.Left != nil {
-			stack = append(stack, s.Left)
+
+		if s.treeNode.Right != nil {
+			stack = append(stack, &node{visit, s.treeNode.Right})
+		}
+		stack = append(stack, &node{print, s.treeNode})
+		if s.treeNode.Left != nil {
+			stack = append(stack, &node{visit, s.treeNode.Left})
 		}
 	}
 
-	return re
-}
-
-func preOrder(root *TreeNode) []int {
-	re := []int{}
-	if root == nil {
-		return re
-	}
-
-	re = append(re, root.Val)
-
-	l := preOrder(root.Left)
-	r := preOrder(root.Right)
-	return append(append(re, l...), r...)
-}
-
-func inOrder(root *TreeNode) []int {
-	re := []int{}
-	if root == nil {
-		return re
-	}
-
-	l := inOrder(root.Left)
-	r := inOrder(root.Right)
-	return append(append(l, root.Val), r...)
-}
-
-func inOrderNR(root *TreeNode) []int {
-	re := []int{}
-	if root == nil {
-		return re
-	}
-	stack := []*TreeNode{}
-	stack = append(stack, root)
-	// for len(stack) > 0 {
-
-	// }
 	return re
 }

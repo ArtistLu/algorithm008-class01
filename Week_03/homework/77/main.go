@@ -15,6 +15,9 @@ func combine(n int, k int) [][]int {
 }
 
 func dfs(s, n, k int, current []int, re *[][]int) {
+	if len(current) < k-(n-s+1) {
+		return
+	}
 	if len(current) == k {
 		*re = append(*re, append([]int{}, current...))
 	}
