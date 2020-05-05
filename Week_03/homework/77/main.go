@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	fmt.Println(combine(5, 1))
+	fmt.Println(combine(7, 6))
 }
 
 func combine(n int, k int) [][]int {
@@ -20,6 +20,7 @@ func dfs(s, n, k int, current []int, re *[][]int) {
 	}
 	if len(current) == k {
 		*re = append(*re, append([]int{}, current...))
+		return
 	}
 
 	for i := s; i <= n; i++ {
