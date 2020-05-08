@@ -59,7 +59,27 @@ def BFS(graph, start, end):
 	# other processing work 
 	...
 ```
-
+### 贪心算法
+- 贪心：当下做局部最优判断
+- 回溯：能够回退
+- 动态规划：最优判断+回退
+### 二分查找
+- 目标函数的单调性	
+- 存在上下界
+- 能够通过索引访问
+####二分查找模板
+```python
+left, right = 0, len(array) - 1 
+while left <= right: 
+	  mid = (left + right) / 2 
+	  if array[mid] == target: 
+		    # find the target!! 
+		    break or return result 
+	  elif array[mid] < target: 
+		    left = mid + 1 
+	  else: 
+		    right = mid - 1
+```
 ### 每日练习
 
 #### day1
@@ -74,3 +94,9 @@ def BFS(graph, start, end):
 #### day2
 
 - [x] [433. 最小基因变化](https://leetcode-cn.com/problems/minimum-genetic-mutation/)
+
+#### day3
+- [x] [529. 扫雷游戏](https://leetcode-cn.com/problems/minesweeper/description/)
+
+#### day4
+- [x] [169. 多数元素](https://leetcode-cn.com/problems/majority-element/description/)
