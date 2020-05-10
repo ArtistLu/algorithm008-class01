@@ -67,7 +67,7 @@ def BFS(graph, start, end):
 - 目标函数的单调性	
 - 存在上下界
 - 能够通过索引访问
-####二分查找模板
+#### 二分查找模板
 ```python
 left, right = 0, len(array) - 1 
 while left <= right: 
@@ -100,3 +100,9 @@ while left <= right:
 
 #### day4
 - [x] [169. 多数元素](https://leetcode-cn.com/problems/majority-element/description/)
+
+#### day5
+- [x] [面试题49. 丑数](https://leetcode-cn.com/problems/chou-shu-lcof/)
+
+#### day6
+- [x] [51. N皇后](https://leetcode-cn.com/problems/n-queens/)
