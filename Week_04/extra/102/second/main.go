@@ -25,7 +25,7 @@ func levelOrder(root *TreeNode) [][]int {
 
 	a, ans := []int{}, [][]int{}
 	queue1, queue2 := []*TreeNode{root}, []*TreeNode{}
-	for len(queue1) > 0 && len(queue2) > 0 {
+	for len(queue1) > 0 || len(queue2) > 0 {
 		q := queue1[0]
 		queue1 = queue1[1:]
 		a = append(a, q.Val)
@@ -37,7 +37,7 @@ func levelOrder(root *TreeNode) [][]int {
 		}
 
 		if len(queue1) == 0 {
-			ans = append(ans, append([]int{}, a...))
+			ans = append(ans, a)
 			a, queue1, queue2 = []int{}, queue2, queue1
 		}
 	}
