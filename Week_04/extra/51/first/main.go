@@ -3,6 +3,8 @@ package main
 import "fmt"
 
 func main() {
+	//solution1 https://leetcode.com/problems/n-queens/discuss/367532/Go-Backtracking-solution
+	//solution2 https://leetcode.com/problems/n-queens/discuss/424605/Short-Go-Solution-with-backtrace-and-bitmap-filter
 	// m := make(map[int]bool)
 
 	// m[1] = true
