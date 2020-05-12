@@ -106,3 +106,9 @@ while left <= right:
 
 #### day6
 - [x] [51. N皇后](https://leetcode-cn.com/problems/n-queens/)
+
+### day29
+- [x] [102. 二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/#/description)
+
+### day30
+- [x] [69. x 的平方根](https://leetcode-cn.com/problems/sqrtx/)
