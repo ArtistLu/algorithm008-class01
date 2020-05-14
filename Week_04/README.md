@@ -112,3 +112,12 @@ while left <= right:
 
 ### day30
 - [x] [69. x 的平方根](https://leetcode-cn.com/problems/sqrtx/)
+- [ ] [153. 寻找旋转排序数组中的最小值](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/)
+
+### day31
+- [x] [455. 分发饼干](https://leetcode-cn.com/problems/assign-cookies/description/)
+
+### day32
+- [x] [33. 搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/
+)
+
