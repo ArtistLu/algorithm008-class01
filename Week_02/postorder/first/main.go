@@ -26,7 +26,7 @@ func main() {
 
 	printTree(a)
 
-	fmt.Println(postorder(a))
+	fmt.Println(postorderTraversal(a))
 }
 
 type TreeNode struct {
