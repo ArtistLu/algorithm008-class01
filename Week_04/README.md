@@ -118,6 +118,16 @@ while left <= right:
 - [x] [455. 分发饼干](https://leetcode-cn.com/problems/assign-cookies/description/)
 
 ### day32
-- [x] [33. 搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/
-)
+- [x] [33. 搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)
 
+### day33
+- [x] [45. 跳跃游戏 II](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)
+  
+### day34
+- [x] [70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)
+  
+### day35
+- [x] [142. 环形链表 II](https://leetcode.com/problems/linked-list-cycle-ii/)
+  
+### day36
+- [x] [面试题62. 圆圈中最后剩下的数字 **复习**](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/)

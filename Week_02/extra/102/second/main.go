@@ -32,11 +32,6 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
-const (
-	print = "print"
-	visit = "visit"
-)
-
 func levelOrder(root *TreeNode) [][]int {
 	if root == nil {
 		return nil
