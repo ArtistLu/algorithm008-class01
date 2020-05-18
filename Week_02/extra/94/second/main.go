@@ -21,7 +21,7 @@ func main() {
 	b.Right = e
 	c.Left = f
 	c.Right = g
-	fmt.Println(preorderTraversal(a))
+	fmt.Println(inorderTraversal(a))
 }
 
 // 二叉树前序遍历
