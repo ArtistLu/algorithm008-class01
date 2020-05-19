@@ -71,3 +71,24 @@ func inorderTraversal(root *TreeNode) []int {
 
 	return ans
 }
+
+func searchMatrix(matrix [][]int, target int) bool {
+	if len(matrix) == 0 {
+		return false
+	}
+	r, c := len(matrix), len(matrix[0])
+	l, r := 0, r*c-1
+
+	for l <= r {
+		mid := l + (r-l)>>1
+		m := matrix[mid/c][mid%c]
+		if m == target {
+			return true
+		} else if m > target {
+			r = mid - 1
+		} else {
+			l = mid + 1
+		}
+	}
+	return false
+}
