@@ -134,3 +134,6 @@ while left <= right:
 
 ### day37
 - [x] [860. 柠檬水找零 **复习**](https://leetcode-cn.com/problems/lemonade-change/description/)
+
+### day38
+- [x] [127. 单词接龙](https://leetcode-cn.com/problems/word-ladder/description/)
