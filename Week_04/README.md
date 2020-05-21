@@ -137,3 +137,6 @@ while left <= right:
 
 ### day38
 - [x] [127. 单词接龙](https://leetcode-cn.com/problems/word-ladder/description/)
+
+### day39
+- [x] [51. N皇后](https://leetcode-cn.com/problems/n-queens/)
