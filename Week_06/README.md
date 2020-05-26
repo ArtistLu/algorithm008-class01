@@ -131,3 +131,9 @@ def divide_conquer(problem, param1, param2, ...):
 
 ### day42
 - [x] [47. 全排列 II](https://leetcode-cn.com/problems/permutations-ii/)
+
+### day43
+- [x] [198. 打家劫舍](https://leetcode-cn.com/problems/house-robber/)
+
+### day44
+- [x] [322. 零钱兑换](https://leetcode-cn.com/problems/coin-change/)
