@@ -137,3 +137,6 @@ def divide_conquer(problem, param1, param2, ...):
 
 ### day44
 - [x] [322. 零钱兑换](https://leetcode-cn.com/problems/coin-change/)
+
+### day45
+- [x] [120. 三角形最小路径和](https://leetcode-cn.com/problems/triangle/)
