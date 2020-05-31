@@ -140,3 +140,12 @@ def divide_conquer(problem, param1, param2, ...):
 
 ### day45
 - [x] [120. 三角形最小路径和](https://leetcode-cn.com/problems/triangle/)
+
+### day46
+- [x] [77. 组合](https://leetcode-cn.com/problems/combinations/)
+
+### day47
+- [x] [312. 戳气球](https://leetcode-cn.com/problems/burst-balloons/)
+
+### day48
+- [x] [221. 最大正方形](https://leetcode-cn.com/problems/maximal-square/)

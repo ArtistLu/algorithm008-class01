@@ -1,7 +1,12 @@
 package main
 
-func main() {
+import "fmt"
 
+func main() {
+	re := []int{1, 2, 3}
+	s := append(re, 9)
+	t := append(s, 9)
+	fmt.Println(re, s, t)
 }
 
 func minimumTotal(triangle [][]int) int {
