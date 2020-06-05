@@ -41,6 +41,59 @@ class Trie(object):
 			node = node[char] 
 		return True
 ```
+
+### 并查集
+
+#### 适用场景
+- 组团配对问题
+- Group or not？
+
+#### 基本操作
+
+- makeSet(s) : 建立一个新的并查集，其中包含s个单元素集合
+- unionSet(x, y): 把 x 和 y 所在的集合合并，要求 x 和 y 所在的集合不想交，如果相交则不合并。
+- find(x) : 找到x所在集合的代表，该操作也可用于判断两个元素是否在同一个集合，只要将他们各自代表比较下就可以了。
+
+#### 代码模板
+
+```py
+# Python 
+
+def init(p): 
+	# for i = 0 .. n: p[i] = i; 
+	p = [i for i in range(n)] 
+ 
+def union(self, p, i, j): 
+	p1 = self.parent(p, i) 
+	p2 = self.parent(p, j) 
+	p[p1] = p2 
+ 
+def parent(self, p, i): 
+	root = i
+	while p[root] != root: 
+		root = p[root] 
+	while p[i] != i: # 路径压缩 ?
+		x = i; i = p[i]; p[x] = root 
+	return root
+```
+
+### 高级搜索
+
+#### 目录
+
+- 剪枝
+- 双向 BFS
+- 启发式搜索（A*）
+
+#### 初级搜索
+
+1. 朴素搜索
+2. 优化方式：不重复（fibonacci）、剪枝（生成括号问题）
+3. 搜索方向：
+   - DFS
+   - BFS
+   - 双向搜索，启发式搜索
+
 ### 每日练习
 
 #### day1
@@ -134,3 +187,10 @@ class Trie(object):
 
 ### day50
 - [x] [94. 二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/)
+
+### day51
+- [x] [547. 朋友圈](https://leetcode-cn.com/problems/friend-circles/)
+
+
+### day52
+- [x] [51. N皇后](https://leetcode-cn.com/problems/n-queens/)
