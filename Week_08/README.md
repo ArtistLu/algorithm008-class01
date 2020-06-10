@@ -127,3 +127,19 @@
 
 #### day53
 - [x] [130. 被围绕的区域](https://leetcode-cn.com/problems/surrounded-regions/)
+
+#### day54
+- [x] [36. 有效的数独](https://leetcode-cn.com/problems/valid-sudoku/description/)
+
+#### day55
+- [x] [217. 存在重复元素](https://leetcode-cn.com/problems/contains-duplicate/)
+- [x] [350. 两个数组的交集 II](https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/)
+
+#### day56
+- [x] [127. 单词接龙](https://leetcode-cn.com/problems/word-ladder/)
+
+#### day57
+- [x] [46. 全排列](https://leetcode-cn.com/problems/permutations/)
+
+#### day58
+- [x] [191. 位1的个数](https://leetcode-cn.com/problems/number-of-1-bits/)
