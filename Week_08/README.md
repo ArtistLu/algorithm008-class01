@@ -143,3 +143,6 @@
 
 #### day58
 - [x] [191. 位1的个数](https://leetcode-cn.com/problems/number-of-1-bits/)
+
+#### day59
+- [x] [1122. 数组的相对排序](https://leetcode-cn.com/problems/relative-sort-array/)
