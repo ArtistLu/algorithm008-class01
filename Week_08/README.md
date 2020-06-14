@@ -24,6 +24,16 @@
 - x=x&(x-1)清零最低位的1
 - x&-x 得到最低位的1
 - x&~x == 0
+
+### 布隆过滤器
+- 一定不存在，可能存在
+#### 案例
+- 比特币网络
+- 分布式系统(Map-Reduce)--hadoop、searchengine
+- Redis 缓存
+- 垃圾邮件、评论等过滤
+### LRU Cache
+
 ### 每日练习
 
 #### day1
@@ -146,3 +156,12 @@
 
 #### day59
 - [x] [1122. 数组的相对排序](https://leetcode-cn.com/problems/relative-sort-array/)
+
+#### day60
+- [x] [146. LRU缓存机制](https://leetcode-cn.com/problems/lru-cache/#/)
+#### day61
+- [x] [231. 2的幂](https://leetcode-cn.com/problems/power-of-two/)
+#### day62
+- [x] [面试题40. 最小的k个数](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/)
+#### day63
+- [x] [88. 合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/)
