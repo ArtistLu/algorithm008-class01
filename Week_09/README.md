@@ -134,4 +134,5 @@
 - [x] [493. 翻转对](https://leetcode-cn.com/problems/reverse-pairs/)
 #### day65
 - [x] [面试题52. 两个链表的第一个公共节点](https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/)
-  
+#### day66
+- [x] [56. 合并区间](https://leetcode-cn.com/problems/merge-intervals/)
