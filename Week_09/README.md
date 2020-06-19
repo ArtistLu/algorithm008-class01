@@ -136,3 +136,9 @@
 - [x] [面试题52. 两个链表的第一个公共节点](https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/)
 #### day66
 - [x] [56. 合并区间](https://leetcode-cn.com/problems/merge-intervals/)
+  
+#### day67
+- [x] [541. 反转字符串 II](https://leetcode-cn.com/problems/reverse-string-ii/)
+
+#### day68
+- [x] [205. 同构字符串](https://leetcode-cn.com/problems/isomorphic-strings/)
